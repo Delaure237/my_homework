@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:home_screen/categories.dart';
+import 'package:untitled4/New_Page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,42 +13,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
+
+        debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: FilmCategories(),
+      home: NewPage(),
     );
   }
 }
-class CardItem{
-  final String text;
-  const CardItem({
-    required this.text,
-  });
-}
-List<CardItem> items = [
-  CardItem(
-      text:"All"
-  ),
-  CardItem(
-      text:"Actions"
-  ),
-  CardItem(
-      text:"Romance"
-  ),
-  CardItem(
-      text:"Comedy"
-  ),
-  CardItem(
-      text:"Romance"
-  ),
-  CardItem(
-      text:"fantasme"
-  ),
-  CardItem(
-      text:"Sport"
-  ),
-];
+
